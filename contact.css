@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monserrat', sans-serif;
+  } 
+  header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #779ECB;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+
+  }
+  header nav a img{
+    width: 100px;
+    height: 100px;
+  }
+header nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #aed4ff;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+header nav ul li{
+    margin: 0 5px;
+  }
+header nav ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+header nav ul li a.active,
+header nav ul li a:hover{
+    color: #111;
+    background: #779ECB;
+  }
+.content{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url('/images/backGround.jpg') ;
+}
+.content .contact{
+    max-width: 800px;
+    text-align: center;
+
+}
+/* line 25 to 33 change the look of the main text at the top and it's subtext */
+.content .contact h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+.content .contact p{
+    font-weight: 300;
+    color: white;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .ContactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .ContactInfo .AddressBox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .ContactInfo .AddressBox .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+/* 62-69 change the set up for the text, it position and et cetera, not the text itself */ 
+.container .ContactInfo .AddressBox .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+/* line 70-72 change the looks of the text at the left most of the website */
+.container .ContactInfo .AddressBox .text{
+    font-weight: 300;
+    color: white;
+}
+.ContactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.ContactForm h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+.ContactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.ContactForm .inputBox input, .ContactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.ContactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+} /* this is the effect on the text when the user types something */
+.ContactForm .inputBox input:focus ~ span,
+.ContactForm .inputBox input:valid ~ span
+.ContactForm .inputBox textarea:focus ~ span,
+.ContactForm .inputBox textarea:valid ~ span {
+    color: #333;
+    font-size: 12px;
+    transform: translatey(-20px); /* moves the text up in the y axis */
+
+}
+.ContactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
